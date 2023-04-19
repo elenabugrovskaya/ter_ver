@@ -5,21 +5,17 @@
 import math
 arr = [100, 80, 75, 77, 89, 33, 45, 25, 65, 17, 30, 24, 57, 55, 70, 75, 65, 84, 90, 150]
 sred = 0
-sred = sum(arr)/len(arr) 
-# среднее арифметическое
+sred = sum(arr)/len(arr) # среднее арифметическое
 print(sred)
 
 arr2 = []
 for i in arr: 
     arr2.append((i-sred)**2)
 
-sigma = math.sqrt(sum(arr2)/len(arr2))
-# среднее квадратичное отклонение
+sigma = math.sqrt(sum(arr2)/len(arr2)) # среднее квадратичное отклонение
 print(sigma)
-D = sum(arr2)/len(arr)
-# смещенная дисперсия
+D = sum(arr2)/len(arr) # смещенная дисперсия
 print(D)
-D1 = sum(arr2)/(len(arr) - 1)
-# несмещенная дисперсия
+D1 = sum(arr2)/(len(arr) - 1) # несмещенная дисперсия
 print(D1)
 
